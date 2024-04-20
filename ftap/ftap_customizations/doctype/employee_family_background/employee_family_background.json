@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-20 22:09:13.462112",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ftap_family_member",
+  "ftap_name",
+  "ftap_occupation"
+ ],
+ "fields": [
+  {
+   "fieldname": "ftap_family_member",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FTAP Family Member"
+  },
+  {
+   "fieldname": "ftap_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FTAP Name"
+  },
+  {
+   "fieldname": "ftap_occupation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FTAP Occupation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-20 22:29:34.902412",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "Employee Family Background",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

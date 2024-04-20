@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-20 22:18:21.727529",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ftap_preferred_airlines",
+  "ftap_frequent_flier_membership_number",
+  "ftap_special_meal_request",
+  "ftap_seating_preference"
+ ],
+ "fields": [
+  {
+   "fieldname": "ftap_preferred_airlines",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FTAP Preferred Airlines"
+  },
+  {
+   "fieldname": "ftap_frequent_flier_membership_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FTAP Frequent Flier Membership Number"
+  },
+  {
+   "fieldname": "ftap_special_meal_request",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FTAP Special Meal Request"
+  },
+  {
+   "fieldname": "ftap_seating_preference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FTAP Seating Preference"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-20 22:19:39.542538",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "Employee Airline Information",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -41,7 +41,7 @@
   },
   {
    "fieldname": "price",
-   "fieldtype": "Float",
+   "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Price"
   },

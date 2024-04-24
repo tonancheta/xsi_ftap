@@ -20,7 +20,7 @@
   },
   {
    "fieldname": "escalation_value_php",
-   "fieldtype": "Float",
+   "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Escalation Value PHP"
   },

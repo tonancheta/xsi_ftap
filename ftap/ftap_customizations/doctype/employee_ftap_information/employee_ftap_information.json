@@ -1,0 +1,489 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-27 13:24:24.539097",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mobile_information_section",
+  "mobile_employee_code",
+  "mobile_first_name",
+  "mobile_middle_name",
+  "mobile_last_name",
+  "mobile_date_of_birth",
+  "mobile_gender",
+  "mobile_nationality",
+  "mobile_marital_status",
+  "mobile_contact_no",
+  "mobile_company_email",
+  "mobile_personal_email",
+  "column_break_eajf",
+  "mobile_date_hired",
+  "mobile_department",
+  "mobile_immediate_superior",
+  "manager_2",
+  "mobile_department_head",
+  "mobile_sss",
+  "mobile_tin",
+  "mobile_philhealth",
+  "mobile_pagibig",
+  "region",
+  "mobile_branch",
+  "section_break_eewe",
+  "mobile_perm_add",
+  "mobile_home_add",
+  "mobile_present_add",
+  "section_break_ivsj",
+  "emergency_contact_no",
+  "ftap_nationality",
+  "ftap_age",
+  "ftap_marital_status",
+  "ftap_tin_number",
+  "ftap_sss_number",
+  "ftap_pagibig_number",
+  "ftap_philhealth_number",
+  "ftap_hiring_date",
+  "ftap_date_of_regularization",
+  "column_break_mfxl",
+  "ftap_immediate_superior",
+  "immediate_email",
+  "ftap_position_classification",
+  "ftap_department_head",
+  "manager_",
+  "ftap_region",
+  "dh_email",
+  "manager_plus_email",
+  "ftap_license_certification",
+  "ftap_payroll_account_branch",
+  "section_break_nmzv",
+  "ftap_health_details",
+  "column_break_jzec",
+  "ftap_height",
+  "ftap_weight",
+  "ftap_avega_member_number",
+  "section_break_cafy",
+  "ftap_employee_family_background",
+  "travel_tab",
+  "ftap_passport_number",
+  "ftap_date_issue",
+  "ftap_copy_of_passport",
+  "column_break_pvaz",
+  "ftap_place_of_issue",
+  "ftap_valid_upto",
+  "section_break_tdyl",
+  "ftap_airline_information",
+  "ftap_preferred_hotels",
+  "ftap_special_needs",
+  "section_break_ztbd",
+  "last_reporting_date",
+  "ftap_separation_date",
+  "column_break_cpaa",
+  "ftap_reason_for_leaving",
+  "employer_initiated"
+ ],
+ "fields": [
+  {
+   "fieldname": "mobile_information_section",
+   "fieldtype": "Section Break",
+   "label": "Mobile Information"
+  },
+  {
+   "fieldname": "mobile_first_name",
+   "fieldtype": "Data",
+   "label": "Mobile First Name"
+  },
+  {
+   "fieldname": "mobile_middle_name",
+   "fieldtype": "Data",
+   "label": "Mobile Middle Name"
+  },
+  {
+   "fieldname": "mobile_last_name",
+   "fieldtype": "Data",
+   "label": "Mobile Last Name"
+  },
+  {
+   "fieldname": "mobile_date_hired",
+   "fieldtype": "Date",
+   "label": "Mobile Date Hired"
+  },
+  {
+   "fieldname": "mobile_date_of_birth",
+   "fieldtype": "Date",
+   "label": "Mobile Date of Birth"
+  },
+  {
+   "fieldname": "mobile_gender",
+   "fieldtype": "Link",
+   "label": "Mobile Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "mobile_nationality",
+   "fieldtype": "Data",
+   "label": "Mobile Nationality"
+  },
+  {
+   "fieldname": "mobile_marital_status",
+   "fieldtype": "Select",
+   "label": "Mobile Marital Status",
+   "options": "Single\nMarried\nWith Domestic Partner\nWidowed\nSeparated"
+  },
+  {
+   "fieldname": "column_break_eajf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_department",
+   "fieldtype": "Link",
+   "label": "Mobile Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "manager_2",
+   "fieldtype": "Data",
+   "label": "Manager 2"
+  },
+  {
+   "fieldname": "mobile_department_head",
+   "fieldtype": "Data",
+   "label": "Mobile Department Head"
+  },
+  {
+   "fieldname": "mobile_sss",
+   "fieldtype": "Data",
+   "label": "Mobile SSS"
+  },
+  {
+   "fieldname": "mobile_tin",
+   "fieldtype": "Data",
+   "label": "Mobile TIN"
+  },
+  {
+   "fieldname": "mobile_philhealth",
+   "fieldtype": "Data",
+   "label": "Mobile PhilHealth"
+  },
+  {
+   "fieldname": "mobile_pagibig",
+   "fieldtype": "Data",
+   "label": "Mobile PagIbig"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Select",
+   "label": "Region",
+   "options": "Luzon\nMindanao\nWest Visayas\nEast Visayas\nEast and West Visayas\nCentral and West Visayas\nLuzViMin"
+  },
+  {
+   "fieldname": "mobile_branch",
+   "fieldtype": "Link",
+   "label": "Mobile Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "mobile_employee_code",
+   "fieldtype": "Data",
+   "label": "Mobile Employee Code"
+  },
+  {
+   "fieldname": "mobile_contact_no",
+   "fieldtype": "Data",
+   "label": "Mobile Contact No"
+  },
+  {
+   "fieldname": "mobile_company_email",
+   "fieldtype": "Data",
+   "label": "Mobile Company Email"
+  },
+  {
+   "fieldname": "mobile_personal_email",
+   "fieldtype": "Data",
+   "label": "Mobile Personal Email"
+  },
+  {
+   "fieldname": "section_break_eewe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mobile_perm_add",
+   "fieldtype": "Small Text",
+   "label": "Mobile Perm Add"
+  },
+  {
+   "fieldname": "mobile_home_add",
+   "fieldtype": "Small Text",
+   "label": "Mobile Home Add"
+  },
+  {
+   "fieldname": "mobile_present_add",
+   "fieldtype": "Small Text",
+   "label": "Mobile Present Add"
+  },
+  {
+   "fieldname": "section_break_ivsj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "emergency_contact_no",
+   "fieldtype": "Data",
+   "label": "Emergency Contact No"
+  },
+  {
+   "fieldname": "ftap_nationality",
+   "fieldtype": "Data",
+   "label": "FTAP Nationality"
+  },
+  {
+   "fieldname": "ftap_age",
+   "fieldtype": "Data",
+   "label": "FTAP Age"
+  },
+  {
+   "fieldname": "ftap_marital_status",
+   "fieldtype": "Select",
+   "label": "FTAP Marital Status",
+   "options": "Single\nMarried\nDivorced\nWidowed\nSeparated\nWith Domestic Partner"
+  },
+  {
+   "fieldname": "ftap_tin_number",
+   "fieldtype": "Data",
+   "label": "FTAP TIN Number"
+  },
+  {
+   "fieldname": "ftap_sss_number",
+   "fieldtype": "Data",
+   "label": "FTAP SSS Number"
+  },
+  {
+   "fieldname": "ftap_pagibig_number",
+   "fieldtype": "Data",
+   "label": "FTAP PagIbig Number"
+  },
+  {
+   "fieldname": "ftap_philhealth_number",
+   "fieldtype": "Data",
+   "label": "FTAP PhilHealth Number"
+  },
+  {
+   "fieldname": "column_break_mfxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ftap_immediate_superior",
+   "fieldtype": "Data",
+   "label": "FTAP Immediate Superior"
+  },
+  {
+   "fieldname": "immediate_email",
+   "fieldtype": "Data",
+   "label": "Immediate Email"
+  },
+  {
+   "fieldname": "ftap_position_classification",
+   "fieldtype": "Select",
+   "label": "FTAP Position Classification",
+   "options": "C-Level\nDept. Head - Expat\nDept. Head - Local\nJr. Manager - NonOps\nJr. Manager - Ops\nRank & File\nSr. Manager - NonOps\nSr. Manager - Ops\nSupervisor - NonOps\nSupervisor - Ops\nSupervisor/Specialist\nConsultant"
+  },
+  {
+   "fieldname": "ftap_department_head",
+   "fieldtype": "Data",
+   "label": "FTAP Department Head"
+  },
+  {
+   "fieldname": "manager_",
+   "fieldtype": "Data",
+   "label": "Manager + 1"
+  },
+  {
+   "fieldname": "ftap_hiring_date",
+   "fieldtype": "Date",
+   "label": "FTAP Hiring Date"
+  },
+  {
+   "fieldname": "ftap_date_of_regularization",
+   "fieldtype": "Date",
+   "label": "FTAP Date of Regularization"
+  },
+  {
+   "fieldname": "ftap_region",
+   "fieldtype": "Select",
+   "label": "FTAP Region",
+   "options": "Luzon\nMindanao\nWest Visayas\nEast Visayas\nEast and West Visayas\nCentral and West Visayas\nLuzViMin"
+  },
+  {
+   "fieldname": "dh_email",
+   "fieldtype": "Data",
+   "label": "DH Email"
+  },
+  {
+   "fieldname": "manager_plus_email",
+   "fieldtype": "Data",
+   "label": "Manager Plus Email"
+  },
+  {
+   "fieldname": "ftap_license_certification",
+   "fieldtype": "Data",
+   "label": "FTAP License Certification"
+  },
+  {
+   "fieldname": "ftap_payroll_account_branch",
+   "fieldtype": "Data",
+   "label": "FTAP Payroll Account Branch"
+  },
+  {
+   "fieldname": "section_break_nmzv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ftap_health_details",
+   "fieldtype": "Table",
+   "label": "FTAP Health Details",
+   "options": "Employee Health Details"
+  },
+  {
+   "fieldname": "column_break_jzec",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ftap_height",
+   "fieldtype": "Data",
+   "label": "FTAP Height"
+  },
+  {
+   "fieldname": "ftap_weight",
+   "fieldtype": "Data",
+   "label": "FTAP Weight"
+  },
+  {
+   "fieldname": "ftap_avega_member_number",
+   "fieldtype": "Data",
+   "label": "FTAP Avega Member Number"
+  },
+  {
+   "fieldname": "section_break_cafy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ftap_employee_family_background",
+   "fieldtype": "Table",
+   "label": "FTAP Employee Family Background",
+   "options": "Employee Family Background"
+  },
+  {
+   "fieldname": "travel_tab",
+   "fieldtype": "Tab Break",
+   "label": "Travel"
+  },
+  {
+   "fieldname": "ftap_passport_number",
+   "fieldtype": "Data",
+   "label": "FTAP Passport Number"
+  },
+  {
+   "fieldname": "ftap_date_issue",
+   "fieldtype": "Date",
+   "label": "FTAP Date Issue"
+  },
+  {
+   "fieldname": "column_break_pvaz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ftap_place_of_issue",
+   "fieldtype": "Data",
+   "label": "FTAP Place of Issue"
+  },
+  {
+   "fieldname": "ftap_copy_of_passport",
+   "fieldtype": "Attach",
+   "label": "FTAP Copy of Passport"
+  },
+  {
+   "fieldname": "ftap_valid_upto",
+   "fieldtype": "Date",
+   "label": "FTAP Valid Upto"
+  },
+  {
+   "fieldname": "section_break_tdyl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ftap_airline_information",
+   "fieldtype": "Table",
+   "label": "FTAP Airline Information",
+   "options": "Employee Airline Information"
+  },
+  {
+   "fieldname": "ftap_preferred_hotels",
+   "fieldtype": "Table",
+   "label": "FTAP Preferred Hotels",
+   "options": "Hotel Information-International"
+  },
+  {
+   "fieldname": "ftap_special_needs",
+   "fieldtype": "Small Text",
+   "label": "FTAP Special Needs"
+  },
+  {
+   "fieldname": "section_break_ztbd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "last_reporting_date",
+   "fieldtype": "Date",
+   "label": "Last Reporting Date"
+  },
+  {
+   "fieldname": "ftap_separation_date",
+   "fieldtype": "Date",
+   "label": "FTAP Separation Date"
+  },
+  {
+   "fieldname": "column_break_cpaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ftap_reason_for_leaving",
+   "fieldtype": "Select",
+   "label": "FTAP Reason for Leaving",
+   "options": "Employee-Initiated\nEmployer-Initiated"
+  },
+  {
+   "fieldname": "employer_initiated",
+   "fieldtype": "Select",
+   "label": "Employer Initiated",
+   "options": "Redundancy\nRetrenchment\nAuthorized/Just Case\nMutual Separation\nMedical"
+  },
+  {
+   "fieldname": "mobile_immediate_superior",
+   "fieldtype": "Data",
+   "label": "Mobile Immediate Superior"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-27 15:27:28.993863",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "Employee FTAP Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

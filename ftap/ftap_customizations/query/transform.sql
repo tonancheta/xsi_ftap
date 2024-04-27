@@ -330,5 +330,67 @@ ALTER TABLE `tabEmployee`
     DROP COLUMN employer_initiated;
 
 /*
-Orphaned DocType(s) found: Frontier 360 Degree Review, TR HR Related-International C-LEVEL, TR HR Related-International CEO, TR HR Related-International DH, TR HR Related-International, TR International CEO, TR International C-LEVEL, TR International DH, TR International, TR HR Related-Domestic C-LEVEL 1, TR Domestic C-LEVEL 1, TR HR Related-Domestic DH, TR HR Related-Domestic, TR HR Related-Domestic CEO, TR Domestic CEO, TR Domestic DH, TR Domestic, Daily Allowance-Intl, Daily Allowance-Domestic, FTAP Travel Itinerary-International, FTAP Travel Itinerary Domestic, Frontier 360 Consolidation Report, Lists of Travel-International, HR Purpose of Travel, Target Setting and Performance Evaluation-Regular Yr 2023, Target Setting and Performance Evaluation-Contract, Target Setting and Performance Evaluation-Probationary, Target Setting and Performance Evaluation-Regular, Target Setting and Performance Evaluation-Project Based, Target Statement Table, Overtime Application Form Commercial, Overtime Application Form SAQ, Overtime Application Form Roll Out, Overtime Application Form QHSE, Overtime Application Form Procurement, Overtime Application Form Power and Ops, Overtime Application Form PMO, Overtime Application Form Legal, Overtime Application Form OM, Overtime Application Form IT, Overtime Application Form HR and Admin, Overtime Application Form Grid, Overtime Application Form Government Rel and Docu, Overtime Application Form Finance and Strategy, Overtime Application Form Finance, Overtime Application Form Executive Office, Overtime Application Form Executive, Overtime Application Form Design and Engineering, Overtime Application Form Commercial and Strategy, Overtime Application Form Warehouse, Overtime Application Form Power, Overtime Application Form Power Grid, Overtime Table, Hiring Request Form, Meter Number, COOP Account Number, Hotel Information, Error Snapshot, Social Media Post, LinkedIn Settings, Twitter Settings, Homepage Featured Product, Exotel Settings
-*/
+Orphaned DocType(s) found:
+- Frontier 360 Degree Review
+- TR HR Related-International C-LEVEL
+- TR HR Related-International CEO
+- TR HR Related-International DH
+- TR HR Related-International
+- TR International CEO
+- TR International C-LEVEL
+- TR International DH
+- TR International
+- TR HR Related-Domestic C-LEVEL 1
+- TR Domestic C-LEVEL 1
+- TR HR Related-Domestic DH
+- TR HR Related-Domestic
+- TR HR Related-Domestic CEO
+- TR Domestic CEO
+- TR Domestic DH
+- TR Domestic
+- Daily Allowance-Intl
+- Daily Allowance-Domestic
+- FTAP Travel Itinerary-International
+- FTAP Travel Itinerary Domestic
+- Frontier 360 Consolidation Report
+- Lists of Travel-International
+- HR Purpose of Travel
+- Target Setting and Performance Evaluation-Regular Yr 2023
+- Target Setting and Performance Evaluation-Contract
+- Target Setting and Performance Evaluation-Probationary
+- Target Setting and Performance Evaluation-Regular
+- Target Setting and Performance Evaluation-Project Based
+- Target Statement Table
+- Overtime Application Form Commercial
+- Overtime Application Form SAQ
+- Overtime Application Form Roll Out
+- Overtime Application Form QHSE
+- Overtime Application Form Procurement
+- Overtime Application Form Power and Ops
+- Overtime Application Form PMO
+- Overtime Application Form Legal
+- Overtime Application Form OM
+- Overtime Application Form IT
+- Overtime Application Form HR and Admin
+- Overtime Application Form Grid
+- Overtime Application Form Government Rel and Docu
+- Overtime Application Form Finance and Strategy
+- Overtime Application Form Finance
+- Overtime Application Form Executive Office
+- Overtime Application Form Executive
+- Overtime Application Form Design and Engineering
+- Overtime Application Form Commercial and Strategy
+- Overtime Application Form Warehouse
+- Overtime Application Form Power
+- Overtime Application Form Power Grid
+- Overtime Table
+- Hiring Request Form
+- Meter Number
+- COOP Account Number
+- Hotel Information
+- Error Snapshot
+- Social Media Post
+- LinkedIn Settings
+- Twitter Settings
+- Homepage Featured Product
+- Exotel Settings*/

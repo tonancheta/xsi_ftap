@@ -461,9 +461,10 @@
    "label": "Mobile Immediate Superior"
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-27 15:27:28.993863",
+ "modified": "2024-04-27 23:09:29.459852",
  "modified_by": "Administrator",
  "module": "FTAP Customizations",
  "name": "Employee FTAP Information",

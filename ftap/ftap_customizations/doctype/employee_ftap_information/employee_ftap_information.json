@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "creation": "2024-04-27 13:24:24.539097",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -90,7 +89,6 @@
   {
    "fieldname": "mobile_first_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Mobile First Name"
   },
   {
@@ -101,7 +99,6 @@
   {
    "fieldname": "mobile_last_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Mobile Last Name"
   },
   {
@@ -186,7 +183,6 @@
   {
    "fieldname": "mobile_employee_code",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Mobile Employee Code",
    "options": "Employee",
    "read_only": 1
@@ -469,7 +465,7 @@
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-28 11:23:22.049423",
+ "modified": "2024-04-28 15:34:54.255863",
  "modified_by": "Administrator",
  "module": "FTAP Customizations",
  "name": "Employee FTAP Information",

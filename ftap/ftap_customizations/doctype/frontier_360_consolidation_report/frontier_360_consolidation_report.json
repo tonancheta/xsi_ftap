@@ -1,0 +1,252 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-07 19:28:55.138907",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "amended_from",
+  "employee_section",
+  "employee_number",
+  "employee_name",
+  "department",
+  "first_name",
+  "last_name",
+  "column_break_8",
+  "position",
+  "reports_to",
+  "section_break_10",
+  "report_link",
+  "section_break_13",
+  "attach_image_14",
+  "immediate_superior",
+  "column_break_15",
+  "attach_image_16",
+  "manager_plus_one",
+  "column_break_17",
+  "attach_image_18",
+  "employee_1",
+  "column_break_21",
+  "attach_image_22",
+  "chro",
+  "immediate_superior_1",
+  "immediate_superior_email",
+  "manager_plus_one_1",
+  "manager_plus_one_email",
+  "employee_email",
+  "date_hired"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Frontier 360 Consolidation Report",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_section",
+   "fieldtype": "Section Break",
+   "label": "EMPLOYEE"
+  },
+  {
+   "fieldname": "employee_number",
+   "fieldtype": "Link",
+   "label": "Employee No.",
+   "options": "Employee",
+   "permlevel": 5
+  },
+  {
+   "fetch_from": "employee_number.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "permlevel": 5
+  },
+  {
+   "fetch_from": "employee_number.mobile_department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "permlevel": 5
+  },
+  {
+   "fetch_from": "employee_number.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "First Name",
+   "permlevel": 5
+  },
+  {
+   "fetch_from": "employee_number.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Last Name",
+   "permlevel": 5
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_number.designation",
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position",
+   "permlevel": 5
+  },
+  {
+   "fetch_from": "employee_number.ftap_immediate_superior",
+   "fieldname": "reports_to",
+   "fieldtype": "Data",
+   "label": "Reports To",
+   "permlevel": 5
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "report_link",
+   "fieldtype": "Text Editor",
+   "label": "Report Link"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break",
+   "label": "SIGNATURE'S"
+  },
+  {
+   "fieldname": "attach_image_14",
+   "fieldtype": "Attach Image",
+   "label": "Immediate Superior",
+   "permlevel": 1
+  },
+  {
+   "fetch_from": "employee_number.ftap_immediate_superior",
+   "fieldname": "immediate_superior",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_image_16",
+   "fieldtype": "Attach Image",
+   "label": "Manager +1",
+   "permlevel": 2
+  },
+  {
+   "fetch_from": "employee_number.manager_",
+   "fieldname": "manager_plus_one",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_image_18",
+   "fieldtype": "Attach Image",
+   "label": "Employee",
+   "permlevel": 3
+  },
+  {
+   "fetch_from": "employee_number.employee_name",
+   "fieldname": "employee_1",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_image_22",
+   "fieldtype": "Attach Image",
+   "label": "CHRO",
+   "permlevel": 4
+  },
+  {
+   "default": "Irene Macatangay",
+   "fieldname": "chro",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_number.ftap_immediate_superior",
+   "fieldname": "immediate_superior_1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Immediate Superior "
+  },
+  {
+   "fetch_from": "employee_number.immediate_email",
+   "fieldname": "immediate_superior_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Immediate Superior Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_number.manager_",
+   "fieldname": "manager_plus_one_1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Manager Plus One "
+  },
+  {
+   "fetch_from": "employee_number.manager_plus_email",
+   "fieldname": "manager_plus_one_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Manager Plus One Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_number.company_email",
+   "fieldname": "employee_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_number.date_of_joining",
+   "fieldname": "date_hired",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date Hired"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-28 07:39:07.728194",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "Frontier 360 Consolidation Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

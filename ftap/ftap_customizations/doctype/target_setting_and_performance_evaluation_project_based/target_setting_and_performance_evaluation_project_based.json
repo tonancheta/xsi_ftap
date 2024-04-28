@@ -1,0 +1,818 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-05 18:55:00.320052",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "target_setting_tab",
+  "section_break_2",
+  "employee_number",
+  "column_break_4",
+  "employee_name",
+  "employee_email",
+  "first_name",
+  "last_name",
+  "column_break_9",
+  "position_title",
+  "column_break_12",
+  "department",
+  "section_break_14",
+  "column_break_15",
+  "immediate_superior_name",
+  "column_break_17",
+  "immediate_email",
+  "dh_email",
+  "manager_plus_email",
+  "column_break_21",
+  "section_break_22",
+  "from_date_hired",
+  "column_break_24",
+  "to",
+  "column_break_26",
+  "section_break_27",
+  "target",
+  "section_break_29",
+  "sig_4",
+  "name_1",
+  "date_1",
+  "column_break_33",
+  "sig_5",
+  "name_2",
+  "date_2",
+  "column_break_37",
+  "sig_6",
+  "name_3",
+  "date_3",
+  "performance_evaluation_tab",
+  "section_break_41",
+  "rating_competency_1",
+  "rating_description_1",
+  "cb_45_column",
+  "comments_1",
+  "sb47_section",
+  "rating_competency_2",
+  "rating_description_2",
+  "cb46_column",
+  "comments_2",
+  "section_break_51",
+  "rating_competency_3",
+  "rating_description_3",
+  "column_break_71",
+  "comments_3",
+  "section_break_73",
+  "rating_competency_4",
+  "rating_description_4",
+  "column_break_76",
+  "comments_4",
+  "section_break_78",
+  "rating_competency_5",
+  "rating_description_5",
+  "column_break_81",
+  "comments_5",
+  "section_break_66",
+  "rating_competency_6",
+  "rating_description_6",
+  "column_break_69",
+  "comments_6",
+  "section_break_71",
+  "rating_competency_7",
+  "rating_description_7",
+  "column_break_74",
+  "comments_7",
+  "section_break_76",
+  "rating_competency_8",
+  "rating_description_8",
+  "column_break_79",
+  "comments_8",
+  "section_break_81",
+  "rating_competency_9",
+  "rating_description_9",
+  "column_break_84",
+  "comments_9",
+  "section_break_86",
+  "rating_competency_10",
+  "rating_description_10",
+  "column_break_89",
+  "comments_10",
+  "section_break_91",
+  "rating_competency_11",
+  "rating_description_11",
+  "column_break_94",
+  "comments_11",
+  "section_break_96",
+  "rating_competency_12",
+  "rating_description_12",
+  "column_break_99",
+  "comments_12",
+  "section_break_101",
+  "rating_competency_13",
+  "rating_description_13",
+  "column_break_104",
+  "comments_13",
+  "section_break_106",
+  "rating_competency_14",
+  "rating_description_14",
+  "column_break_109",
+  "feedback_on_performance_section",
+  "accomplishments",
+  "column_break_44",
+  "development_areas",
+  "section_break_46",
+  "sig_7",
+  "date_4",
+  "column_break_49",
+  "sig_8",
+  "date_5",
+  "column_break_52",
+  "sig_9",
+  "date_6",
+  "column_break_55",
+  "sig_10",
+  "date_7",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "target_setting_tab",
+   "fieldtype": "Tab Break",
+   "label": "Target Setting "
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Employee"
+  },
+  {
+   "fieldname": "employee_number",
+   "fieldtype": "Link",
+   "label": "Employee Number",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_number.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee_number.company_email",
+   "fieldname": "employee_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_number.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "First Name"
+  },
+  {
+   "fetch_from": "employee_number.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_number.designation",
+   "fieldname": "position_title",
+   "fieldtype": "Data",
+   "label": "Position Title"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_number.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fetch_from": "employee_number.ftap_immediate_superior",
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break",
+   "label": "Immediate Superior"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_number.ftap_immediate_superior",
+   "fieldname": "immediate_superior_name",
+   "fieldtype": "Data",
+   "label": "Immediate Superior Name"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_number.immediate_email",
+   "fieldname": "immediate_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Immediate Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_number.dh_email",
+   "fieldname": "dh_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "DH Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_number.manager_plus_email",
+   "fieldname": "manager_plus_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Manager Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break",
+   "label": "Duration of Evaluation"
+  },
+  {
+   "fieldname": "from_date_hired",
+   "fieldtype": "Date",
+   "label": "From"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Date",
+   "label": "To"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "<b>Outstanding</b> (5.00): Significant, easily recognizable contribution; performance is clearly outstanding; results obtained far in excess of the requirements. Rating must be supported with specifics.\n<br>\n<b>Exceeds Expectations</b> (4.00 - 4.99): Employee achieves \u201cexcellence\u201d day-to-day performance whereby some of the results are beyond requirements.\n<br>\n<b>Meets Expectations</b> (3.00 - 3.99): Performance completely satisfactory and sufficient in every respect. Meets all end results expected of a seasoned and well-qualified employee.\n<br>\n<b>Needs Improvement</b> (2.00 - 2.99): Results not yet completely meeting requirements of all objectives.  Results fall some-what below expected levels of accomplishment.  Need further development. \n<br>\n<b>Unacceptable</b> (1.00 - 1.99): Unacceptable performance.  Results noticeably below the expected level; may have to be replaced if no major improvement.\n",
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break",
+   "label": "Target Statement Table"
+  },
+  {
+   "description": "Guide to Setting Targets:  Targets must be S M A R T!\nSpecific, Measurable, Achievable, Realistic; Time-bound \n** A SMART target incorporates all of these criteria to help focus your\nefforts and increase the chances of achieving your targets.",
+   "fieldname": "target",
+   "fieldtype": "Table",
+   "options": "Target Statement Table"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sig_4",
+   "fieldtype": "Attach Image",
+   "label": "Immediate Superior",
+   "permlevel": 2
+  },
+  {
+   "fetch_from": "employee_number.ftap_immediate_superior",
+   "fieldname": "name_1",
+   "fieldtype": "Data",
+   "label": "Name ",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "date_1",
+   "fieldtype": "Date",
+   "label": "Date ",
+   "permlevel": 2,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sig_5",
+   "fieldtype": "Attach Image",
+   "label": "Manager +1",
+   "permlevel": 3
+  },
+  {
+   "fetch_from": "employee_number.ftap_department_head",
+   "fieldname": "name_2",
+   "fieldtype": "Data",
+   "label": "Name ",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "date_2",
+   "fieldtype": "Date",
+   "label": "Date ",
+   "permlevel": 3,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sig_6",
+   "fieldtype": "Attach Image",
+   "label": "Employee",
+   "permlevel": 4
+  },
+  {
+   "fetch_from": "employee_number.employee_name",
+   "fieldname": "name_3",
+   "fieldtype": "Data",
+   "label": "Name ",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "date_3",
+   "fieldtype": "Date",
+   "label": "Date ",
+   "permlevel": 4,
+   "read_only": 1
+  },
+  {
+   "fieldname": "performance_evaluation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Performance Evaluation"
+  },
+  {
+   "description": "<b>CORE COMPETENCIES RATING DEFINITIONS </b>\n<br>\n<b> 5.00 - Outstanding: </b> Significant, easily recognizable contribution; performance is clearly outstanding; results obtained far in excess of the requirements. Rating must be supported with specifics.\n<br>\n<b> 4.00 - 4.99 - Exceeds Expectations: </b> Employee achieves \u201cexcellence\u201d day-to-day performance whereby some of the results are beyond requirements.\n<br>\n<b>3.00 - 3.99 - Meets Expectations:  </b> Performance completely satisfactory and sufficient in every respect. Meets all end results expected of a seasoned and well-qualified employee.\n<br>\n<b>2.00 - 2.99 - Needs Improvement: </b> Results not yet completely meeting requirements of all objectives.  Results fall some-what below expected levels of accomplishment.  Need further development.\n<br>\n<b>1.00 - 1.99 - Unacceptable: </b> Unacceptable performance.  Results noticeably below the expected level; may have to be replaced if no major improvement.\n<br>\n<br>\n<b> 1. COMPETENCY: JOB KNOWLEDGE AND SKILLS </b>\n<br>\n<b> Description: Demonstrates job knowledge and skills essential to the effective performance of the job; understands the business operations.</b>",
+   "fieldname": "section_break_41",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_1",
+   "fieldtype": "Float",
+   "label": "Rating Competency 1"
+  },
+  {
+   "fieldname": "rating_description_1",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "cb_45_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_1",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b>2. COMPETENCY: WORK OUTPUT AND PRODUCTIVITY </b>\n<br>\n<b> Description: Ability to produce results and achieve set targets.</b>",
+   "fieldname": "sb47_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_2",
+   "fieldtype": "Float",
+   "label": "Rating Competency 2"
+  },
+  {
+   "fieldname": "rating_description_2",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "cb46_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_2",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b>3. COMPETENCY: QUALITY</b>\n<br>\n<b>Description: Pays attention to details; accuracy and thoroughness to achieve highest quality standards.</b>",
+   "fieldname": "section_break_51",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_3",
+   "fieldtype": "Float",
+   "label": "Rating Competency 3"
+  },
+  {
+   "fieldname": "rating_description_3",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "column_break_71",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_3",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b>4. COMPETENCY: PROBLEM-SOLVING</b>\n<br>\n<b> Description: Ability to identify problem areas; effectively evaluates alternative solutions and develops feasible solutions. Ability to take calculated risks.</b>",
+   "fieldname": "section_break_73",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_4",
+   "fieldtype": "Float",
+   "label": "Rating Competency 4"
+  },
+  {
+   "fieldname": "rating_description_4",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "column_break_76",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_4",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b>5. COMPETENCY: THOUGHT LEADERSHIP</b>\n<br> \n<b> Description: Demonstrates the ability to think critically, identify problems and issues; and generate innovative ideas and solutions around which teams organize their work.</b>  ",
+   "fieldname": "section_break_78",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_5",
+   "fieldtype": "Float",
+   "label": "Rating Competency 5"
+  },
+  {
+   "fieldname": "rating_description_5",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "column_break_81",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_5",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b>6. COMPETENCY: INITIATIVE</b>\n<br>\n<b> DESCRIPTION: Goes the extra mile by thinking about improving work without being told.</b> ",
+   "fieldname": "section_break_66",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_6",
+   "fieldtype": "Float",
+   "label": "Rating Competency 6"
+  },
+  {
+   "fieldname": "rating_description_6",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "column_break_69",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_6",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b>7. COMPETENCY: SENSE OF URGENCY</b>\n<br>\n<b> Description: Consciousness in meeting deadlines or doing things ahead of time.</b>",
+   "fieldname": "section_break_71",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_7",
+   "fieldtype": "Float",
+   "label": "rating competency 7"
+  },
+  {
+   "fieldname": "rating_description_7",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "column_break_74",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_7",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b>8. COMPETENCY: ACCOUNTABILITY AND SENSE OF RESPONSIBILITY</b>\n<br>\n<b>Description: Ensures that tasks and output are delivered with minimal follow-ups.  Owns-up to one's action and its consequences.</b>",
+   "fieldname": "section_break_76",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_8",
+   "fieldtype": "Float",
+   "label": "rating competency 8"
+  },
+  {
+   "fieldname": "rating_description_8",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "column_break_79",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_8",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b>9. COMPETENCY: COMMUNICATIONS</b>\n<br>\n<b> Description: Expresses ideas and information accurately whether verbal or in written form.  Conveys relevant, reliable and detailed information.</b>\n",
+   "fieldname": "section_break_81",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_9",
+   "fieldtype": "Float",
+   "label": "rating competency 9"
+  },
+  {
+   "fieldname": "rating_description_9",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "column_break_84",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_9",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b>10. COMPETENCY:  LEADERSHIP</b>\n<br>\n<b> Description: Provides clear sense of direction and sets example; ability to lead and guide people in order to achieve common goals; strong people management skills and has the ability to influence peers and team members.</b>",
+   "fieldname": "section_break_86",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_10",
+   "fieldtype": "Float",
+   "label": "rating competency 10"
+  },
+  {
+   "fieldname": "rating_description_10",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "column_break_89",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_10",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b>11. COMPETENCY: COLLABORATION AND TEAMWORK </b>\n<br>\n<b>Description: Responds positively to situations that require cooperation and teamwork; actively seeks win-win solutions; effectively interacts, communicates and collaborates with others.</b>",
+   "fieldname": "section_break_91",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_11",
+   "fieldtype": "Float",
+   "label": "rating competency 11"
+  },
+  {
+   "fieldname": "rating_description_11",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "column_break_94",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_11",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b>12. COMPETENCY: COSTUMER FOCUS (INTERNAL AND EXTERNAL)</b>\n<br>\n<b>Description: Works effectively with customers both internal and external; anticipates customer needs; translates customer requests into actions.</b>\n",
+   "fieldname": "section_break_96",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_12",
+   "fieldtype": "Float",
+   "label": "rating competency 12"
+  },
+  {
+   "fieldname": "rating_description_12",
+   "fieldtype": "Data",
+   "label": "Rating Description"
+  },
+  {
+   "fieldname": "column_break_99",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_12",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "description": "<b> 13. COMPETENCY: ADHERENCE TO PROCESSES, POLICIES AND PROCEDURES</b>\n<br>\n<b> Description: Ability to follow the company's rules and regulations; work standard operating procedures.</b>",
+   "fieldname": "section_break_101",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_13",
+   "fieldtype": "Float",
+   "label": "rating competency 13"
+  },
+  {
+   "fieldname": "rating_description_13",
+   "fieldtype": "Data",
+   "label": "rating description"
+  },
+  {
+   "fieldname": "column_break_104",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments_13",
+   "fieldtype": "Small Text",
+   "label": "comments "
+  },
+  {
+   "fieldname": "section_break_106",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rating_competency_14",
+   "fieldtype": "Float",
+   "label": "Overall Average Rating",
+   "precision": "2"
+  },
+  {
+   "fieldname": "rating_description_14",
+   "fieldtype": "Data",
+   "label": "Overall Average Rating Description"
+  },
+  {
+   "fieldname": "column_break_109",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedback_on_performance_section",
+   "fieldtype": "Section Break",
+   "label": "Feedback on Performance"
+  },
+  {
+   "fieldname": "accomplishments",
+   "fieldtype": "Small Text",
+   "label": "Accomplishments"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "development_areas",
+   "fieldtype": "Small Text",
+   "label": "Development Areas"
+  },
+  {
+   "fieldname": "section_break_46",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sig_7",
+   "fieldtype": "Attach Image",
+   "label": "Immediate Superior",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "date_4",
+   "fieldtype": "Date",
+   "label": "Date Signed",
+   "permlevel": 2,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sig_8",
+   "fieldtype": "Attach Image",
+   "label": "Manager + 1",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "date_5",
+   "fieldtype": "Date",
+   "label": "Date Signed",
+   "permlevel": 3,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sig_9",
+   "fieldtype": "Attach Image",
+   "label": "Employee",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "date_6",
+   "fieldtype": "Date",
+   "label": "Date Signed",
+   "permlevel": 4,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sig_10",
+   "fieldtype": "Attach Image",
+   "label": "HR Representative",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "date_7",
+   "fieldtype": "Date",
+   "label": "Date Signed",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Target Setting and Performance Evaluation-Project Based",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-28 08:00:07.170449",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "Target Setting and Performance Evaluation-Project Based",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

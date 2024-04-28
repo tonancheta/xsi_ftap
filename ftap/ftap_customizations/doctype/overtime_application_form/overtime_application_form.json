@@ -1,29 +1,143 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-04-27 16:31:36.738822",
+ "autoname": "OT-FORM-.#####.",
+ "creation": "2023-09-19 10:55:15.126373",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "section_break_thgk",
-  "amended_from",
   "employee_no",
   "employee_name",
   "first_name",
   "last_name",
-  "company_email",
-  "column_break_ghpr",
   "department",
+  "column_break_6",
+  "company_email",
   "position",
   "immediate_supervisor",
+  "immediate_email",
   "cost_center",
+  "section_break_10",
+  "overtime_table",
+  "section_break_14",
   "total_ot_meal",
-  "immediate_email"
+  "column_break_15",
+  "column_break_17",
+  "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "section_break_thgk",
+   "fieldname": "employee_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee No.",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_no.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_no.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "First Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_no.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Last Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_no.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_no.company_email",
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Company Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_no.designation",
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Position",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_no.ftap_immediate_superior",
+   "fieldname": "immediate_supervisor",
+   "fieldtype": "Data",
+   "label": "Immediate Supervisor",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_no.immediate_email",
+   "fieldname": "immediate_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Immediate Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_no.payroll_cost_center",
+   "fieldname": "cost_center",
+   "fieldtype": "Data",
+   "label": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "description": "<b> LEGEND: </b>\n<br>\n<b> Night Differential Hours </b> - 22:00 to 6:00\n<br>\n<br>\n<b> Click the links for:</b>\n<br>\n<a href=\"https://www.veed.io/view/6b9fdd05-199d-46d4-b317-1e2e1e4286e0?panel=share\">Video Tutorial </a>\n<br>\n <a href=\"https://www.loom.com/share/272fe5f2e620405fade423c5057161f6?sid=f8d8c94e-becc-45c3-8f76-526336142ff5\"> Manual Instruction</a>",
+   "fieldname": "section_break_10",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overtime_table",
+   "fieldtype": "Table",
+   "options": "Overtime Table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_ot_meal",
+   "fieldtype": "Currency",
+   "label": "Total OT Meal",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "amended_from",
@@ -32,79 +146,17 @@
    "no_copy": 1,
    "options": "Overtime Application Form",
    "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
-  },
-  {
-   "fieldname": "employee_no",
-   "fieldtype": "Link",
-   "label": "Employee No",
-   "options": "Employee"
-  },
-  {
-   "fieldname": "employee_name",
-   "fieldtype": "Data",
-   "label": "Employee Name"
-  },
-  {
-   "fieldname": "first_name",
-   "fieldtype": "Data",
-   "label": "First Name"
-  },
-  {
-   "fieldname": "last_name",
-   "fieldtype": "Data",
-   "label": "Last Name"
-  },
-  {
-   "fieldname": "company_email",
-   "fieldtype": "Data",
-   "label": "Company Email"
-  },
-  {
-   "fieldname": "column_break_ghpr",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "department",
-   "fieldtype": "Link",
-   "label": "Department",
-   "options": "Department"
-  },
-  {
-   "fieldname": "position",
-   "fieldtype": "Data",
-   "label": "Position"
-  },
-  {
-   "fieldname": "immediate_supervisor",
-   "fieldtype": "Data",
-   "label": "Immediate Supervisor"
-  },
-  {
-   "fieldname": "cost_center",
-   "fieldtype": "Link",
-   "label": "Cost Center",
-   "options": "Cost Center"
-  },
-  {
-   "fieldname": "total_ot_meal",
-   "fieldtype": "Currency",
-   "label": "Total OT Meal"
-  },
-  {
-   "fieldname": "immediate_email",
-   "fieldtype": "Data",
-   "label": "Immediate Email"
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-04-27 16:53:05.268292",
+ "modified": "2024-04-28 07:26:06.487672",
  "modified_by": "Administrator",
  "module": "FTAP Customizations",
  "name": "Overtime Application Form",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -117,11 +169,11 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

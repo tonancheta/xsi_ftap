@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-09-19 11:10:30.830885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ot_code",
+  "ot_meal",
+  "meal_allowance",
+  "time_from",
+  "time_to",
+  "day",
+  "ot_hours",
+  "time_from_nd",
+  "time_to_nd",
+  "night_differential_hours",
+  "total_hours",
+  "reason_for_ot"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "ot_code",
+   "fieldtype": "Select",
+   "label": "OT Code",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "ot_meal",
+   "fieldtype": "Select",
+   "label": "OT Meal",
+   "options": "\nYes\nNo",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.ot_meal == \"Yes\"",
+   "fieldname": "meal_allowance",
+   "fieldtype": "Float",
+   "label": "Meal Allowance",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "time_from",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Time From",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "time_to",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Time To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Data",
+   "label": "Day"
+  },
+  {
+   "columns": 1,
+   "fieldname": "ot_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "OT Hours",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "time_from_nd",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Time From ND"
+  },
+  {
+   "columns": 1,
+   "fieldname": "time_to_nd",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Time To ND"
+  },
+  {
+   "columns": 2,
+   "fieldname": "night_differential_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Night Differential Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Float",
+   "label": "Total Hours",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "reason_for_ot",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reason for OT",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-28 07:25:35.379508",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "Overtime Table",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

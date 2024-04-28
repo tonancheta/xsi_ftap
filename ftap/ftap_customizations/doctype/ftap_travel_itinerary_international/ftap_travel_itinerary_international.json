@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-03-25 11:29:57.769198",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "travel_from",
+  "travel_to",
+  "transport",
+  "carrier",
+  "class_of_service",
+  "flight_no",
+  "departure_date",
+  "return_date",
+  "price",
+  "mop_mode_of_payment"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "travel_from",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Travel From",
+   "options": "Lists of Travel-International",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "travel_to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Travel To",
+   "options": "Lists of Travel-International",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "transport",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Transport",
+   "options": "\nFlight\nRented Car"
+  },
+  {
+   "columns": 1,
+   "fieldname": "carrier",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Carrier",
+   "options": "\nAirline\n---------------------\nPhilippine Airline\nCebu Pacific\nAir Asia\nEmirates\nCathay Pacific\nQatar Airways\nEtihad\nSingapore Airlines\nJetstar\nScoot Air\nThai Airways\nOthers\n---------------------\nCar\n---------------------\nAlamo\nEuropcar\nUber"
+  },
+  {
+   "columns": 1,
+   "fieldname": "class_of_service",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Class of Service",
+   "options": "Economy\nBusiness"
+  },
+  {
+   "columns": 1,
+   "fieldname": "flight_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Flight No"
+  },
+  {
+   "columns": 1,
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Departure Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Return Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Price",
+   "permlevel": 2,
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "mop_mode_of_payment",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "MOP (Mode of Payment)",
+   "options": "\nCC Amex\nCC Master Card\nCC Visa\nGCash\nTravel Agency\nPersonal",
+   "permlevel": 2
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-28 07:41:36.397705",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "FTAP Travel Itinerary-International",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

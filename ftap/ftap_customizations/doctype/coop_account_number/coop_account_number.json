@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:coop_account_no",
+ "creation": "2023-11-07 10:16:51.207824",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "coop_account_no",
+  "site_id",
+  "project_type",
+  "coop",
+  "meter_type",
+  "meter_no",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "coop_account_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "COOP Account No.",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "site_id",
+   "fieldtype": "Data",
+   "label": "Site ID"
+  },
+  {
+   "columns": 2,
+   "fieldname": "project_type",
+   "fieldtype": "Data",
+   "label": "Project Type"
+  },
+  {
+   "columns": 2,
+   "fieldname": "coop",
+   "fieldtype": "Data",
+   "label": "COOP"
+  },
+  {
+   "columns": 2,
+   "fieldname": "meter_type",
+   "fieldtype": "Data",
+   "label": "Meter Type"
+  },
+  {
+   "columns": 2,
+   "fieldname": "meter_no",
+   "fieldtype": "Data",
+   "label": "Meter No."
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "COOP Account Number",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-28 07:33:04.697867",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "COOP Account Number",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

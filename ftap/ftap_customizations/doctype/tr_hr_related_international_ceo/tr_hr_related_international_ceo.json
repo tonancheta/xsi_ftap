@@ -1,0 +1,319 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-03 15:00:18.453069",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "travel_type",
+  "booking_type",
+  "column_break_3",
+  "purpose_of_travel",
+  "section_break_5",
+  "employee",
+  "employee_name",
+  "position_title",
+  "department",
+  "employee_email",
+  "immediate_email",
+  "manager_plus_one_email",
+  "dh_email",
+  "column_break_15",
+  "is_name",
+  "dh_name",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "section_break_21",
+  "are_you_a_first_time_traveller_in_ftap",
+  "column_break_23",
+  "attach_id",
+  "govt_id",
+  "passport_number",
+  "section_break_27",
+  "itinerary",
+  "section_break_29",
+  "hotel_information",
+  "section_break_31",
+  "daily_allowance",
+  "section_break_33",
+  "airline_ticket_cost",
+  "hotel_cost",
+  "daily_allowance_cost",
+  "total_trip_cost",
+  "column_break_38",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Domestic",
+   "fieldname": "travel_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Travel Type",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Booking Type",
+   "options": "\nRound Trip\nOne Way",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purpose_of_travel",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Purpose of Travel",
+   "options": "HR Purpose of Travel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "position_title",
+   "fieldtype": "Data",
+   "label": "Position Title",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.mobile_company_email",
+   "fieldname": "employee_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee.immediate_email",
+   "fieldname": "immediate_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Immediate Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee.manager_plus_email",
+   "fieldname": "manager_plus_one_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Manager Plus One Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee.dh_email",
+   "fieldname": "dh_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "DH Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.mobile_immediate_superior",
+   "fieldname": "is_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "IS Name"
+  },
+  {
+   "fetch_from": "employee.ftap_department_head",
+   "fieldname": "dh_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "DH Name"
+  },
+  {
+   "fetch_from": "employee.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "<b>(Passport Name)</b> First Name"
+  },
+  {
+   "fetch_from": "employee.middle_name",
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fetch_from": "employee.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "are_you_a_first_time_traveller_in_ftap",
+   "fieldtype": "Select",
+   "label": "Are you a first time traveller in FTAP?",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.are_you_a_first_time_traveller_in_ftap== \"Yes\"",
+   "fieldname": "attach_id",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "Attach your Govt. ID/Passport here"
+  },
+  {
+   "depends_on": "eval:doc.are_you_a_first_time_traveller_in_ftap== \"Yes\"",
+   "fieldname": "govt_id",
+   "fieldtype": "Data",
+   "label": "Govt ID & Validity Date"
+  },
+  {
+   "depends_on": "eval:doc.are_you_a_first_time_traveller_in_ftap== \"Yes\"",
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Passport Number "
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break",
+   "label": "Travel Itinerary"
+  },
+  {
+   "fieldname": "itinerary",
+   "fieldtype": "Table",
+   "options": "FTAP Travel Itinerary-International"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break",
+   "label": "Hotel Information"
+  },
+  {
+   "fieldname": "hotel_information",
+   "fieldtype": "Table",
+   "options": "Hotel Information-International"
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break",
+   "label": "Daily Allowance"
+  },
+  {
+   "fieldname": "daily_allowance",
+   "fieldtype": "Table",
+   "options": "Daily Allowance-Intl"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "airline_ticket_cost",
+   "fieldtype": "Currency",
+   "label": "Airline Ticket Cost",
+   "precision": "2"
+  },
+  {
+   "fieldname": "hotel_cost",
+   "fieldtype": "Currency",
+   "label": "Hotel Cost",
+   "precision": "2"
+  },
+  {
+   "fieldname": "daily_allowance_cost",
+   "fieldtype": "Currency",
+   "label": "Daily Allowance Cost",
+   "precision": "2"
+  },
+  {
+   "fieldname": "total_trip_cost",
+   "fieldtype": "Currency",
+   "label": "Total Trip Cost",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "TR HR Related-International CEO",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-28 06:33:51.731825",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "TR HR Related-International CEO",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

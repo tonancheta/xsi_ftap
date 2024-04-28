@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "OT-FORM-HR-.#####.",
+ "creation": "2023-10-04 10:25:01.256884",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_no",
+  "employee_name",
+  "first_name",
+  "last_name",
+  "department",
+  "column_break_6",
+  "company_email",
+  "position",
+  "immediate_supervisor",
+  "cost_center",
+  "section_break_10",
+  "overtime_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_no",
+   "fieldtype": "Link",
+   "label": "Employee No.",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_no.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee_no.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "First Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_no.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Last Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_no.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_no.mobile_company_email",
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Company Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_no.designation",
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fetch_from": "employee_no.ftap_immediate_superior",
+   "fieldname": "immediate_supervisor",
+   "fieldtype": "Data",
+   "label": "Immediate Supervisor"
+  },
+  {
+   "fetch_from": "employee_no.payroll_cost_center",
+   "fieldname": "cost_center",
+   "fieldtype": "Data",
+   "label": "Cost Center"
+  },
+  {
+   "description": "<b> LEGEND: </b>\n<br>\n<b> Night Differential Hours </b> - 22:00 to 6:00\n<br>\n<br>\n<b> Click the links for:</b>\n<br>\n<a href=\"https://www.veed.io/view/6b9fdd05-199d-46d4-b317-1e2e1e4286e0?panel=share\">Video Tutorial </a>\n<br>\n <a href=\"https://frontiertowersph-my.sharepoint.com/personal/sandra_mendoza_frontiertowersphilippines_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsandra%5Fmendoza%5Ffrontiertowersphilippines%5Fcom%2FDocuments%2FOvertime%20Application%20Manual%5F10012023%2Epdf&amp;parent=%2Fpersonal%2Fsandra%5Fmendoza%5Ffrontiertowersphilippines%5Fcom%2FDocuments&amp;fromShare=true&amp;ga=1\"> OT Application Manual</a>\n<br>\n <a href=\"https://frontiertowersph-my.sharepoint.com/personal/sandra_mendoza_frontiertowersphilippines_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsandra%5Fmendoza%5Ffrontiertowersphilippines%5Fcom%2FDocuments%2FOvertime%20Approval%20Manual%5F10012023%2Epdf&amp;parent=%2Fpersonal%2Fsandra%5Fmendoza%5Ffrontiertowersphilippines%5Fcom%2FDocuments&amp;fromShare=true&amp;ga=1\"> OT Approval Manual</a>",
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overtime_table",
+   "fieldtype": "Table",
+   "options": "Overtime Table"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Overtime Application Form HR and Admin",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-28 07:53:04.261910",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "Overtime Application Form HR and Admin",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

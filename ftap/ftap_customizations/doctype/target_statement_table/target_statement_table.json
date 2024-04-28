@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-01-02 21:18:19.811951",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "targets",
+  "target_date",
+  "unacceptable",
+  "needs_improvement",
+  "meets_expectations",
+  "exceeds_expectations",
+  "outstanding",
+  "rating",
+  "rating_description",
+  "comments"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "default": "Please fill in.",
+   "fieldname": "targets",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Targets",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Target Date",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "default": "Input applicable Key Performance Indicators",
+   "fieldname": "unacceptable",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Unacceptable",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "default": "Input applicable Key Performance Indicators",
+   "fieldname": "needs_improvement",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Needs Improvement",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "default": "Input applicable Key Performance Indicators",
+   "fieldname": "meets_expectations",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Meets Expectations",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "default": "Input applicable Key Performance Indicators",
+   "fieldname": "exceeds_expectations",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Exceeds Expectations",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "default": "Input applicable Key Performance Indicators",
+   "fieldname": "outstanding",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Outstanding",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "rating",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Rating",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "rating_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Rating Description",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "default": "Please provide comment/s",
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-28 08:01:03.383260",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "Target Statement Table",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

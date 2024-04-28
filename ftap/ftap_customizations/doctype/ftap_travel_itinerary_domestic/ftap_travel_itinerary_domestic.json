@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-03-25 09:53:15.589487",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "travel_from",
+  "travel_to",
+  "transport",
+  "carrier",
+  "class_of_service",
+  "flight_no",
+  "departure_date",
+  "return_date",
+  "price",
+  "mop_mode_of_payment"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "travel_from",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Travel From",
+   "options": "\nManila\nCebu\nDavao\nBulacan\nTacloban\nAbra\nAgusan Del Norte\nAgusan Del Sur\nAklan\nAlbay\nAntique\nApayao\nAurora\nBasilan\nBataan\nBatanes\nBatangas\nBenguet\nBiliran\nBohol\nBukidnon\nCagayan\nCamarines Norte\nCamarines Sur\nCamiguin\nCapiz\nCatanduanes\nCavite\nCotabato\nDavao De Oro\nDavao Del Norte\nDavao Del Sur\nDavao Occidental\nDavao Oriental\nDinagat Islands\nEastern Samar\nGuimaras\nIfugao\nIlocos Norte\nIlocos Sur\nIloilo\nIsabela\nKalinga\nLa Union\nLaguna\nLanao Del Norte\nLanao Del Sur\nLeyte\nMaguindanao Del Norte\nMaguindanao Del Sur\nMarinduque\nMasbate\nMisamis Occidental\nMisamis Oriental\nMountain Province\nNegros Occidental\nNegros Oriental\nNorthern Samar\nNueva Ecija\nNueva Vizcaya\nOccidental Mindoro\nOriental Mindoro\nPalawan\nPampanga\nPangasinan\nQuezon\nQuirino\nRizal\nRomblon\nSamar\nSarangani\nSiquijor\nSorsogon\nSouth Cotabato\nSouthern Leyte\nSultan Kudarat\nSulu\nSurigao Del Norte\nSurigao Del Sur\nTarlac\nTawi-Tawi\nZambales\nZamboanga Del Norte\nZamboanga Del Sur\nZamboanga Sibugay",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "travel_to",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Travel To",
+   "options": "\nManila\nCebu\nDavao\nBulacan\nTacloban\nAbra\nAgusan Del Norte\nAgusan Del Sur\nAklan\nAlbay\nAntique\nApayao\nAurora\nBasilan\nBataan\nBatanes\nBatangas\nBenguet\nBiliran\nBohol\nBukidnon\nCagayan\nCamarines Norte\nCamarines Sur\nCamiguin\nCapiz\nCatanduanes\nCavite\nCotabato\nDavao De Oro\nDavao Del Norte\nDavao Del Sur\nDavao Occidental\nDavao Oriental\nDinagat Islands\nEastern Samar\nGuimaras\nIfugao\nIlocos Norte\nIlocos Sur\nIloilo\nIsabela\nKalinga\nLa Union\nLaguna\nLanao Del Norte\nLanao Del Sur\nLeyte\nMaguindanao Del Norte\nMaguindanao Del Sur\nMarinduque\nMasbate\nMisamis Occidental\nMisamis Oriental\nMountain Province\nNegros Occidental\nNegros Oriental\nNorthern Samar\nNueva Ecija\nNueva Vizcaya\nOccidental Mindoro\nOriental Mindoro\nPalawan\nPampanga\nPangasinan\nQuezon\nQuirino\nRizal\nRomblon\nSamar\nSarangani\nSiquijor\nSorsogon\nSouth Cotabato\nSouthern Leyte\nSultan Kudarat\nSulu\nSurigao Del Norte\nSurigao Del Sur\nTarlac\nTawi-Tawi\nZambales\nZamboanga Del Norte\nZamboanga Del Sur\nZamboanga Sibugay",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "transport",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Transport",
+   "options": "\nFlight\nRented Car"
+  },
+  {
+   "columns": 1,
+   "fieldname": "carrier",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Carrier",
+   "options": "\nAirlines\n------------------\nAir Asia\nCebu Pacific\nPhilippine Airlines\nSunlight Air\n------------------\nCar\n------------------\nAlamo\nEuropcar"
+  },
+  {
+   "columns": 1,
+   "default": "Economy",
+   "fieldname": "class_of_service",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Class of Service",
+   "options": "Economy\nBusiness",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "flight_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Flight No"
+  },
+  {
+   "columns": 1,
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Departure Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Return Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Price",
+   "permlevel": 2,
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "mop_mode_of_payment",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "MOP (Mode of Payment)",
+   "options": "\nCC Amex\nCC Master Card\nCC Visa\nGCash\nTravel Agency\nPersonal",
+   "permlevel": 2
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-28 07:41:51.334150",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "FTAP Travel Itinerary Domestic",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,272 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-05 14:45:10.614074",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "position",
+  "department",
+  "location",
+  "requested_by",
+  "column_break_5",
+  "existing_headcount",
+  "headcount_needed",
+  "date_required",
+  "budgeted",
+  "reporting_to",
+  "employment_status_section",
+  "employment_status",
+  "how_many_months",
+  "how_many_months_2",
+  "nature_of_request_section",
+  "nature_of_request",
+  "replaced_employee",
+  "resigned_employee",
+  "other",
+  "new_hire_specification_section",
+  "years_of_experience_required",
+  "education",
+  "others",
+  "core_skills_section",
+  "core_skills",
+  "skills_competencies",
+  "approval_section_section",
+  "department_manager_approval",
+  "column_break_29",
+  "hr_manager",
+  "cost_center",
+  "date_expected",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Position",
+   "options": "Designation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Requested By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "existing_headcount",
+   "fieldtype": "Int",
+   "label": "Existing Headcount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "headcount_needed",
+   "fieldtype": "Select",
+   "label": "Headcount Needed",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_required",
+   "fieldtype": "Date",
+   "label": "Date Required",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budgeted",
+   "fieldtype": "Select",
+   "label": "Budgeted",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reporting_to",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reporting To"
+  },
+  {
+   "fieldname": "employment_status_section",
+   "fieldtype": "Section Break",
+   "label": "EMPLOYMENT STATUS"
+  },
+  {
+   "fieldname": "employment_status",
+   "fieldtype": "Select",
+   "label": "Employment Status",
+   "options": "\nProbationary (Full Time)\nProject Based\nTemporary (agency based)",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.employment_status == \"Project Based\"",
+   "fieldname": "how_many_months",
+   "fieldtype": "Int",
+   "label": "How Many Months"
+  },
+  {
+   "depends_on": "eval:doc.employment_status == \"Temporary (agency based)\"",
+   "fieldname": "how_many_months_2",
+   "fieldtype": "Int",
+   "label": "How Many Months "
+  },
+  {
+   "fieldname": "nature_of_request_section",
+   "fieldtype": "Section Break",
+   "label": "NATURE OF REQUEST"
+  },
+  {
+   "fieldname": "nature_of_request",
+   "fieldtype": "Select",
+   "label": "Nature of Request",
+   "options": "\nReplacement\nResignation\nNew position\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "replaced_employee",
+   "fieldtype": "Data",
+   "label": "Replaced Employee"
+  },
+  {
+   "fieldname": "resigned_employee",
+   "fieldtype": "Data",
+   "label": "Resigned Employee"
+  },
+  {
+   "depends_on": "eval:doc.nature_of_request == \"Other\"",
+   "fieldname": "other",
+   "fieldtype": "Data",
+   "label": "Other"
+  },
+  {
+   "fieldname": "new_hire_specification_section",
+   "fieldtype": "Section Break",
+   "label": "NEW HIRE SPECIFICATION"
+  },
+  {
+   "fieldname": "years_of_experience_required",
+   "fieldtype": "Int",
+   "label": "Years of Experience Required",
+   "reqd": 1
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Select",
+   "label": "Education",
+   "options": "\nBachelor's Degree\nMaster's Degree\nDoctoral (PhD)\nOthers",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.education == \"Others\"",
+   "fieldname": "others",
+   "fieldtype": "Data",
+   "label": "Others"
+  },
+  {
+   "fieldname": "core_skills_section",
+   "fieldtype": "Section Break",
+   "label": "CORE SKILLS"
+  },
+  {
+   "fieldname": "core_skills",
+   "fieldtype": "Text Editor",
+   "label": "Core Skills",
+   "reqd": 1
+  },
+  {
+   "fieldname": "skills_competencies",
+   "fieldtype": "Text Editor",
+   "label": "Skills Competencies",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approval_section_section",
+   "fieldtype": "Section Break",
+   "label": "APPROVAL SECTION"
+  },
+  {
+   "fieldname": "department_manager_approval",
+   "fieldtype": "Data",
+   "label": "Department Manager Approval (Signed)"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hr_manager",
+   "fieldtype": "Data",
+   "label": "HR Manager (Signed)"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Data",
+   "label": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_expected",
+   "fieldtype": "Date",
+   "label": "Date Expected",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Hiring Request Form",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-28 07:42:20.892987",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "Hiring Request Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

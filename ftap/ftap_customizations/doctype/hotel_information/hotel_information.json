@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-09-19 09:46:43.481133",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hotel_name",
+  "membership_number",
+  "check_in",
+  "check_out",
+  "exchange_rate",
+  "currency",
+  "price",
+  "price_in_usd"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "hotel_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hotel Name",
+   "options": "\n--Manila--\nF1 Hotel Manila\nMy Space Hotel BGC\nOYO Hotel BGC\nSeda BGC Manila\nShangri-la Fort Manila\n--Cebu--\nLeope Hotel Cebu\nSeda Ayala Cebu\nRed Planet Cebu\n--Davao--\nGo Hotel Davao\nRed Planet Davao\nDusitd2d Davao\nSeda Abreeza Davao",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "membership_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Membership Number"
+  },
+  {
+   "columns": 2,
+   "fieldname": "check_in",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Check In",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "check_out",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Check Out",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "exchange_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Exchange Rate",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "default": "PHP",
+   "fieldname": "currency",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Currency",
+   "options": "PHP",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Price",
+   "precision": "2"
+  },
+  {
+   "fieldname": "price_in_usd",
+   "fieldtype": "Float",
+   "label": "Price in USD",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-28 07:43:12.336920",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "Hotel Information",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

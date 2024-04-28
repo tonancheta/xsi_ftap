@@ -1,0 +1,447 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-06 15:56:45.140139",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "target_setting_tab",
+  "section_break_1",
+  "employee_number",
+  "column_break_4",
+  "employee_name",
+  "employee_email",
+  "first_name",
+  "last_name",
+  "column_break_9",
+  "position_title",
+  "column_break_11",
+  "department",
+  "section_break_13",
+  "column_break_14",
+  "immediate_superior_name",
+  "manager_plus_name",
+  "column_break_17",
+  "immediate_email",
+  "dh_email",
+  "manager_plus_email",
+  "column_break_21",
+  "section_break_22",
+  "date_hired",
+  "from",
+  "column_break_25",
+  "to",
+  "column_break_27",
+  "section_break_27",
+  "html_28",
+  "section_break_28",
+  "target",
+  "total",
+  "rating_description",
+  "section_break_32",
+  "sig_4",
+  "name_1",
+  "date_1",
+  "column_break_36",
+  "sig_5",
+  "name_2",
+  "date_2",
+  "column_break_40",
+  "sig_6",
+  "name_3",
+  "date_3",
+  "tab_break_44",
+  "section_break_45",
+  "accomplishments",
+  "column_break_47",
+  "development_areas",
+  "section_break_49",
+  "sig_7",
+  "date_4",
+  "column_break_52",
+  "sig_8",
+  "date_5",
+  "column_break_55",
+  "sig_9",
+  "date_6",
+  "column_break_58",
+  "sig_10",
+  "date_7",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "target_setting_tab",
+   "fieldtype": "Tab Break",
+   "label": "Target Setting"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Employee"
+  },
+  {
+   "fieldname": "employee_number",
+   "fieldtype": "Link",
+   "label": "Employee Number",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_number.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee_number.company_email",
+   "fieldname": "employee_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_number.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "First Name"
+  },
+  {
+   "fetch_from": "employee_number.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_number.designation",
+   "fieldname": "position_title",
+   "fieldtype": "Link",
+   "label": "Position Title",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_number.mobile_department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break",
+   "label": "Immediate Superior"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_number.ftap_immediate_superior",
+   "fieldname": "immediate_superior_name",
+   "fieldtype": "Data",
+   "label": "Immediate Superior Name"
+  },
+  {
+   "fetch_from": "employee_number.manager_",
+   "fieldname": "manager_plus_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Manager Plus Name"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_number.immediate_email",
+   "fieldname": "immediate_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Immediate Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_number.dh_email",
+   "fieldname": "dh_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "DH Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "employee_number.manager_plus_email",
+   "fieldname": "manager_plus_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Manager +1 Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break",
+   "label": "Duration of Evaluation"
+  },
+  {
+   "fetch_from": "employee_number.date_of_joining",
+   "fieldname": "date_hired",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date Hired"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Date",
+   "label": "From"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Date",
+   "label": "To"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "<a href=\"\">Work Instruction Manual</a>",
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break",
+   "label": "Work Instruction"
+  },
+  {
+   "fieldname": "html_28",
+   "fieldtype": "HTML"
+  },
+  {
+   "description": "<b>Outstanding</b> (5.00): Significant, easily recognizable contribution; performance is clearly outstanding; results obtained far in excess of the requirements. Rating must be supported with specifics.\n<br>\n<b>Exceeds Expectations</b> (4.00 - 4.99): Employee achieves \u201cexcellence\u201d day-to-day performance whereby some of the results are beyond requirements.\n<br>\n<b>Meets Expectations</b> (3.00 - 3.99): Performance completely satisfactory and sufficient in every respect. Meets all end results expected of a seasoned and well-qualified employee.\n<br>\n<b>Needs Improvement</b> (2.00 - 2.99): Results not yet completely meeting requirements of all objectives.  Results fall some-what below expected levels of accomplishment.  Need further development. \n<br>\n<b>Unacceptable</b> (1.00 - 1.99): Unacceptable performance.  Results noticeably below the expected level; may have to be replaced if no major improvement.",
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break",
+   "label": "Target Statement Table"
+  },
+  {
+   "description": "Guide to Setting Targets:  Targets must be S M A R T!\nSpecific, Measurable, Achievable, Realistic; Time-bound \n** A SMART target incorporates all of these criteria to help focus your\nefforts and increase the chances of achieving your targets. Please input applicable Key Performance Indicators in each rating scale.",
+   "fieldname": "target",
+   "fieldtype": "Table",
+   "options": "Target Statement Table"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Overall Average Rating",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rating_description",
+   "fieldtype": "Data",
+   "label": "Overall Average Rating Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sig_4",
+   "fieldtype": "Attach Image",
+   "permlevel": 2
+  },
+  {
+   "fetch_from": "employee_number.ftap_immediate_superior",
+   "fieldname": "name_1",
+   "fieldtype": "Data",
+   "label": "Immediate Superior's Signature"
+  },
+  {
+   "fieldname": "date_1",
+   "fieldtype": "Data",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sig_5",
+   "fieldtype": "Attach Image",
+   "permlevel": 3
+  },
+  {
+   "fetch_from": "employee_number.manager_",
+   "fieldname": "name_2",
+   "fieldtype": "Data",
+   "label": "Manager+1's Signature"
+  },
+  {
+   "fieldname": "date_2",
+   "fieldtype": "Data",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sig_6",
+   "fieldtype": "Attach Image",
+   "permlevel": 4
+  },
+  {
+   "fetch_from": "employee_number.employee_name",
+   "fieldname": "name_3",
+   "fieldtype": "Data",
+   "label": "Employee's Signature"
+  },
+  {
+   "fieldname": "date_3",
+   "fieldtype": "Data",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_break_44",
+   "fieldtype": "Tab Break",
+   "label": "Performance Evaluation"
+  },
+  {
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break",
+   "label": "Feedback on Performance"
+  },
+  {
+   "fieldname": "accomplishments",
+   "fieldtype": "Small Text",
+   "label": "Accomplishments"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "development_areas",
+   "fieldtype": "Small Text",
+   "label": "Development Areas"
+  },
+  {
+   "fieldname": "section_break_49",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sig_7",
+   "fieldtype": "Attach Image",
+   "label": "Immediate Superior's Signature",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "date_4",
+   "fieldtype": "Date",
+   "label": "Date Signed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sig_8",
+   "fieldtype": "Attach Image",
+   "label": "Manager+1's Signature",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "date_5",
+   "fieldtype": "Date",
+   "label": "Date Signed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sig_9",
+   "fieldtype": "Attach Image",
+   "label": "Employee's Signature",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "date_6",
+   "fieldtype": "Date",
+   "label": "Date Signed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sig_10",
+   "fieldtype": "Attach Image",
+   "label": "HR Representative's Signature",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "date_7",
+   "fieldtype": "Date",
+   "label": "Date Signed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Target Setting and Performance Evaluation-Regular",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-28 08:00:20.185100",
+ "modified_by": "Administrator",
+ "module": "FTAP Customizations",
+ "name": "Target Setting and Performance Evaluation-Regular",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

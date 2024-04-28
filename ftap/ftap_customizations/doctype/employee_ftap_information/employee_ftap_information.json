@@ -90,6 +90,7 @@
   {
    "fieldname": "mobile_first_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Mobile First Name"
   },
   {
@@ -100,6 +101,7 @@
   {
    "fieldname": "mobile_last_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Mobile Last Name"
   },
   {
@@ -183,8 +185,11 @@
   },
   {
    "fieldname": "mobile_employee_code",
-   "fieldtype": "Data",
-   "label": "Mobile Employee Code"
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mobile Employee Code",
+   "options": "Employee",
+   "read_only": 1
   },
   {
    "fieldname": "mobile_contact_no",
@@ -464,7 +469,7 @@
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-27 23:09:29.459852",
+ "modified": "2024-04-28 11:23:22.049423",
  "modified_by": "Administrator",
  "module": "FTAP Customizations",
  "name": "Employee FTAP Information",

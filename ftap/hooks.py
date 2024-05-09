@@ -133,6 +133,14 @@ doctype_js = {
 # 	}
 # }
 
+fixtures = [
+    # export all records from the Category table
+    {"dt": "Client Script", "filters": { "module": "FTAP Customizations" }}
+
+    # export only those records that match the filters from the Role table
+    # {"dt": "Role", "filters": [["role_name", "like", "Admin%"]]},
+]
+
 # Scheduled Tasks
 # ---------------
 

@@ -31,7 +31,7 @@ frappe.ui.form.on('Employee', {
     //                 frm.set_value('custom_mobile_date_hired', r.message['mobile_date_hired']);
     //                 frm.set_value('custom_mobile_department', r.message['mobile_department']);
     //                 frm.set_value('custom_mobile_immediate_supervisor', r.message['mobile_immediate_supervisor']);
-    //                 frm.set_value('custom_mobile_manager_1', r.message['manager_']);
+    //                 frm.set_value('custom_mobile_manager__1', r.message['manager_']);
     //                 frm.set_value('custom_mobile_department_head', r.message['ftap_department_head']);
     //                 frm.set_value('custom_mobile_region', r.message['region']);
     //                 frm.set_value('custom_mobile_branch', r.message['mobile_branch']);
@@ -49,7 +49,7 @@ frappe.ui.form.on('Employee', {
     //                 frm.set_value('custom_mobile_permanent_address_local', r.message['mobile_perm_add']);
     //                 frm.set_value('custom_mobile_present_address_local', r.message['mobile_present_add']);
     //                 frm.set_value('custom_mobile_home_address_abroad', r.message['mobile_home_add']);
-    //                 frm.set_value('custom_mobile_emergency_contact_person', frm.doc.emergency_contact_person);
+    //                 frm.set_value('custom_mobile_emergency_contact_person', frm.doc.person_to_be_contacted);
     //                 frm.set_value('custom_mobile_emergency_contact_no', r.message['emergency_contact_no']);
     //             }
     //         }

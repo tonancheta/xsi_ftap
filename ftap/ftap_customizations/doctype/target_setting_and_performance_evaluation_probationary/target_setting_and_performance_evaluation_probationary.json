@@ -16,17 +16,17 @@
   "last_name",
   "column_break_9",
   "position_title",
+  "test",
   "column_break_12",
   "department",
-  "section_break_14",
-  "column_break_15",
+  "immediate_superior_section",
   "immediate_superior_name",
   "manager_plus_one",
-  "column_break_17",
+  "column_break_gfmo",
   "immediate_email",
   "dh_email",
   "manager_plus_email",
-  "column_break_21",
+  "column_break_wpul",
   "section_break_22",
   "from_date_hired",
   "from",
@@ -38,7 +38,7 @@
   "section_break_31_section",
   "total_target_table",
   "total_rating_description",
-  "section_break_29",
+  "section_break_gpoy",
   "sig_4",
   "name_1",
   "date_1",
@@ -46,7 +46,7 @@
   "sig_5",
   "name_2",
   "date_2",
-  "column_break_37",
+  "column_break_lpis",
   "sig_6",
   "name_3",
   "date_3",
@@ -132,7 +132,8 @@
   "column_break_55",
   "sig_10",
   "date_7",
-  "amended_from"
+  "amended_from",
+  "workflow_state"
  ],
  "fields": [
   {
@@ -149,8 +150,7 @@
    "fieldname": "employee_number",
    "fieldtype": "Link",
    "label": "Employee Number",
-   "options": "Employee",
-   "permlevel": 1
+   "options": "Employee"
   },
   {
    "fieldname": "column_break_4",
@@ -208,36 +208,18 @@
    "permlevel": 1
   },
   {
-   "fetch_from": "employee_number.ftap_immediate_superior",
-   "fieldname": "section_break_14",
-   "fieldtype": "Section Break",
-   "label": "Immediate Superior",
-   "permlevel": 1
-  },
-  {
-   "fieldname": "column_break_15",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fetch_from": "employee_number.ftap_immediate_superior",
    "fieldname": "immediate_superior_name",
    "fieldtype": "Data",
    "label": "Immediate Superior Name",
    "permlevel": 1
   },
   {
-   "fetch_from": "employee_number.manager_",
    "fieldname": "manager_plus_one",
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Manager Plus One"
   },
   {
-   "fieldname": "column_break_17",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fetch_from": "employee_number.immediate_email",
    "fieldname": "immediate_email",
    "fieldtype": "Data",
    "hidden": 1,
@@ -245,7 +227,6 @@
    "options": "Email"
   },
   {
-   "fetch_from": "employee_number.dh_email",
    "fieldname": "dh_email",
    "fieldtype": "Data",
    "hidden": 1,
@@ -253,16 +234,11 @@
    "options": "Email"
   },
   {
-   "fetch_from": "employee_number.manager_plus_email",
    "fieldname": "manager_plus_email",
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Manager Email",
    "options": "Email"
-  },
-  {
-   "fieldname": "column_break_21",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "section_break_22",
@@ -329,16 +305,11 @@
    "read_only": 1
   },
   {
-   "fieldname": "section_break_29",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "sig_4",
    "fieldtype": "Attach Image",
    "permlevel": 2
   },
   {
-   "fetch_from": "employee_number.ftap_immediate_superior",
    "fieldname": "name_1",
    "fieldtype": "Data",
    "label": "Attach Immediate Superior's Signature",
@@ -361,7 +332,6 @@
    "permlevel": 3
   },
   {
-   "fetch_from": "employee_number.ftap_department_head",
    "fieldname": "name_2",
    "fieldtype": "Data",
    "label": "Attach Manager +1's Signature",
@@ -373,10 +343,6 @@
    "label": "Date ",
    "permlevel": 3,
    "read_only": 1
-  },
-  {
-   "fieldname": "column_break_37",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "sig_6",
@@ -893,12 +859,43 @@
    "options": "Target Setting and Performance Evaluation-Probationary",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "label": "Test"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "label": "Workflow State"
+  },
+  {
+   "fieldname": "immediate_superior_section",
+   "fieldtype": "Section Break",
+   "label": "Immediate Superior"
+  },
+  {
+   "fieldname": "column_break_gfmo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wpul",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_gpoy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_lpis",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-04-28 07:59:49.611563",
+ "modified": "2024-05-21 15:56:51.217447",
  "modified_by": "Administrator",
  "module": "FTAP Customizations",
  "name": "Target Setting and Performance Evaluation-Probationary",

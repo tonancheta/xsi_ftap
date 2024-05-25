@@ -140,6 +140,9 @@ doctype_js = {
 #     # export only those records that match the filters from the Role table
 #     # {"dt": "Role", "filters": [["role_name", "like", "Admin%"]]},
 # ]
+fixtures = [
+    {"dt": "Client Script", "filters": [["name", "=", "Employee Mobile Summary"]]}
+]
 
 # Scheduled Tasks
 # ---------------
